@@ -1,0 +1,63 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.large .value {
+  font-size: 32px;
+}
+
+/* Variants */
+.positive {
+  background: var(--positive-bg);
+  border-color: rgba(22,163,74,0.2);
+}
+.positive .value { color: var(--positive); }
+.positive .label { color: #15803d; }
+
+.negative {
+  background: var(--negative-bg);
+  border-color: rgba(220,38,38,0.2);
+}
+.negative .value { color: var(--negative); }
+
+.accent {
+  background: var(--accent-light);
+  border-color: rgba(184,150,90,0.25);
+}
+.accent .value { color: var(--accent); }
+.accent .label { color: #92680f; }
+
+.blue {
+  background: var(--blue-bg);
+  border-color: rgba(37,99,235,0.2);
+}
+.blue .value { color: var(--blue); }
+.blue .label { color: #1d4ed8; }
